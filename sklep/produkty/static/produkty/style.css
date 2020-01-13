@@ -65,16 +65,27 @@ li a:hover
     width   : 800px;
     height  : ;
     overflow: auto;
+	background-image: url("chevron.png");
+	color 	: black;
+	border-radius: 10px;
+	-webkit-box-shadow: 10px 10px 30px 10px rgba(186,186,186,0.9);
+	-moz-box-shadow: 10px 10px 30px 10px rgba(186,186,186,0.9);
+	box-shadow: 10px 10px 30px 10px rgba(186,186,186,0.9);
+	
+	
 }
+
+
 
 #footer
 {
     clear:both;
     padding:20px;
     width:1000px;
-    text-align:center;
+    text-align:right;
     a text-decoration:none;
     a:hover color:#yellow;
+	margin-top : 50px;
 
 }
 
@@ -83,6 +94,7 @@ li a:hover
     width:800px;
     margin-left: auto;
     margin-right: auto;
+	color: black;
 
 }
 
@@ -130,7 +142,7 @@ li a:hover
     width:600px;
     min-height:400px;
     text-align:center;
-    color:rgb(215,215,215);
+    color: #505050;
 
     clear:both;
 }
@@ -150,6 +162,7 @@ text-align:right;
     float:left;
     font-family: "Courier", Times, serif;
 }
+
 #obraz
 {
     float:left;
@@ -174,7 +187,7 @@ button {
 }
 
 input[type=submit] {
-  background-color:rgb(40,60,180);
+  background-color:red;
   border: none;
   color: white;
   padding: 8px 16px;
@@ -184,7 +197,7 @@ input[type=submit] {
   font-size: 16px;
   margin: 0px 0px;
   cursor: pointer;
-  float: auto;
+  float: right;
 }
 
 input[type=number]{
@@ -231,6 +244,7 @@ table, th, td {
   border: 1px solid black;
   padding: 10px;
   text-align: left;
+  color: black;
 }
 th {
   height: 40px;
@@ -256,28 +270,14 @@ th {
    border-width: 0px;   border-color: white;   border-style: solid;
 }
 
-.box
+#content a 
 {
-float:right;
-font-size: 19px;
-font-weight:bold;
+
+    text-decoration:none;
+    color: black;
+	
 }
-.box select {
-  background-color: #0563af;
-  color: white;
-  padding: 7px;
-  width: 250px;
-  border: none;
-  font-size: 17px;
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
-  -webkit-appearance: menupopup ;
-  appearance: menupopup ;
-  outline: none;
-}
-
-
-
-.box:hover::before {
-  color: rgba(255, 255, 255, 0.6);
-  background-color: rgba(255, 255, 255, 0.2);
+#content a:hover
+{
+	color: #555;
 }

@@ -15,12 +15,14 @@
         <tr>
             <th style="width=20px">id</th>
             <th>nazwa</th>
-            <th>stan</th>
+            <th>lokalizacja</th>
+			<th>stan</th>
         </tr>
     {% for item in cart.products.all %}
         <tr>
             <td>{{ item.id }}</td>
             <td>{{ item.nazwa }}</td>
+			<td>{{ item.lokalizacja }}</td>
             <td>{{ item.stan }}</td>
             <td><a href="{% url 'remove_from_cart' item.id %}">usuń</a></td>
         </tr>
